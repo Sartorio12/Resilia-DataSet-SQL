@@ -5,12 +5,12 @@ CREATE TABLE tb_aluno (
     nome varchar(50) NULL,
     cpf varchar(15) NULL,
     data_nascimento DATE NULL, 
-    sexo varchar(1) NULL, 
-    PRIMARY KEY (id_aluno)
+    sexo varchar(1) NULL,
+    email varchar(50) NULL
 );
 
 CREATE TABLE tb_turma(
-    id_turma SERIAL NOT NULL,
+    id_turma SERIAL primary key,
     data_inicio DATE NULL,
     data_fim DATE NULL,
     id_curso int NOT NULL,
