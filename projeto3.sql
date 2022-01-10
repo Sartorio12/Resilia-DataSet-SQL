@@ -202,6 +202,11 @@ INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('2', 'Isabela S
 INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('3', 'Priscila Guedes da Silva', 'priguedes@xpto.com');
 INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('4', 'Teresa Betina Nunes', 'teresabet@xpto.com');
 INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('5', 'Augusto Bernardo Sales', 'augustosales@xpto.com');
+INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('6', 'Alice Rosa Araújo', 'aalicerosaaraujo@metroquali.com.br');
+INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('7', 'Igor Corte Real', 'cortereal@nhrtaxiaereo.com');
+INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('8', 'Bruna Lara Carvalho', 'bcarvalho@nhrtaxiaereo.com');
+INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('9', 'Sophia Eduarda da Cruz', 'sophiaeduarda1@hotamail.com');
+INSERT INTO tb_facilitador (id_facilitador, nome, email) VALUES ('10', 'Vicente Kevin Lucca dos Santos', 'luccadossantos@audiogeni.com.br');
 
 INSERT INTO tb_turma_facilitador (id_turma, id_facilitador) VALUES ('1', '1' );
 INSERT INTO tb_turma_facilitador (id_turma, id_facilitador) VALUES ('1', '2' );
