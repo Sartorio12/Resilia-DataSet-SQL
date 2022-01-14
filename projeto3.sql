@@ -25,17 +25,26 @@ CREATE TABLE tb_curso(
     PRIMARY KEY (id_curso)
 );
 
-CREATE TABLE tb_facilitador(
-    id_facilitador SERIAL NOT NULL,
-    nome varchar(50) NOT NULL,
-    email varchar(50) NOT NULL, 
-    PRIMARY KEY (id_facilitador)
-);
 CREATE TABLE tb_turma_facilitador(
     id_turma int NOT NULL,
     id_facilitador int NOT NULL,
     CONSTRAINT tb_turma_facilitador_fk_id_turma FOREIGN KEY (id_turma) REFERENCES tb_turma (id_turma),
     CONSTRAINT tb_turma_facilitador_fk_id_facilitador FOREIGN KEY (id_facilitador) REFERENCES tb_facilitador (id_facilitador)
+);
+
+CREATE TABLE tb_facilitador(
+    id_facilitador SERIAL NOT NULL,
+    id_colaborador INT NOT NULL,
+    categoria varchar(50) NOT NULL,
+    PRIMARY KEY (id_facilitador)
+);
+
+CREATE TABLE tb_colaborador(
+    id_colaborador SERIAL NOT NULL,
+    nome varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    departamento varchar(50) NOT NULL,
+    PRIMARY KEY (id_colaborador)
 );
 
 -- Inserting Values
