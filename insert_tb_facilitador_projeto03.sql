@@ -1,4 +1,4 @@
---tb_turma_facilitador
+--tb_facilitador
 
 INSERT INTO tb_facilitador (id_facilitador, id_colaborador, categoria) 
 	VALUES ('fs001','R5015', 'soft');
