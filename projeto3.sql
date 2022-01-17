@@ -10,7 +10,7 @@ CREATE TABLE tb_aluno (
 );
 
 CREATE TABLE tb_turma(
-    id_turma SERIAL primary key,
+    id_turma SERIAL NOT NULL,
     data_inicio DATE NULL,
     data_fim DATE NULL,
     id_curso int NOT NULL,
@@ -23,13 +23,6 @@ CREATE TABLE tb_curso(
     nome varchar(50) NOT NULL,
 
     PRIMARY KEY (id_curso)
-);
-
-CREATE TABLE tb_turma_facilitador(
-    id_turma int NOT NULL,
-    id_facilitador int NOT NULL,
-    CONSTRAINT tb_turma_facilitador_fk_id_turma FOREIGN KEY (id_turma) REFERENCES tb_turma (id_turma),
-    CONSTRAINT tb_turma_facilitador_fk_id_facilitador FOREIGN KEY (id_facilitador) REFERENCES tb_facilitador (id_facilitador)
 );
 
 CREATE TABLE tb_facilitador(
@@ -45,6 +38,13 @@ CREATE TABLE tb_colaborador(
     email varchar(50) NOT NULL,
     departamento varchar(50) NOT NULL,
     PRIMARY KEY (id_colaborador)
+);
+
+CREATE TABLE tb_turma_facilitador(
+    id_turma int NOT NULL,
+    id_facilitador int NOT NULL,
+    CONSTRAINT tb_turma_facilitador_fk_id_turma FOREIGN KEY (id_turma) REFERENCES tb_turma (id_turma),
+    CONSTRAINT tb_turma_facilitador_fk_id_facilitador FOREIGN KEY (id_facilitador) REFERENCES tb_facilitador (id_facilitador)
 );
 
 -- Inserting Values
