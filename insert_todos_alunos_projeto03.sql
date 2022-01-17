@@ -1204,7 +1204,7 @@ INSERT INTO tb_aluno ( id_turma, nome, cpf, data_nascimento, sexo, email)
 INSERT INTO tb_aluno ( id_turma, nome, cpf, data_nascimento, sexo, email) 
 	VALUES ( 12, 'Flávia Marinho', '088.135.704-90', '1987-11-25', 'F', 'ag.u.i.aresilia@gmail.com');
 INSERT INTO tb_aluno ( id_turma, nome, cpf, data_nascimento, sexo, email) 
-	VALUES (, 12, 'Gerardo Pontes', '157.607.225-81', '1991-03-10', 'F', 'a.g.u.i.aresilia@gmail.com');
+	VALUES ( 12, 'Gerardo Pontes', '157.607.225-81', '1991-03-10', 'F', 'a.g.u.i.aresilia@gmail.com');
 INSERT INTO tb_aluno ( id_turma, nome, cpf, data_nascimento, sexo, email) 
 	VALUES ( 12, 'Gerusa Pacheco', '647.525.427-49', '2001-10-29', 'M', 'aguia.resilia@gmail.com');
 INSERT INTO tb_aluno ( id_turma, nome, cpf, data_nascimento, sexo, email) 
