@@ -15,6 +15,7 @@ CREATE TABLE tb_turma(
     data_fim DATE NULL,
     id_curso int NOT NULL,
     animal varchar(50) NULL,
+    modulo int NOT NULL,
     PRIMARY KEY (id_turma)
 );
 
