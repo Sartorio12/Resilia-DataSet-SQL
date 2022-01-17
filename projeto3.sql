@@ -10,11 +10,12 @@ CREATE TABLE tb_aluno (
 );
 
 CREATE TABLE tb_turma(
-    id_turma SERIAL primary key,
+    id_turma SERIAL NOT NULL,
     data_inicio DATE NULL,
     data_fim DATE NULL,
     id_curso int NOT NULL,
     animal varchar(50) NULL,
+    modulo int NOT NULL,
     PRIMARY KEY (id_turma)
 );
 
@@ -27,10 +28,19 @@ CREATE TABLE tb_curso(
 
 CREATE TABLE tb_facilitador(
     id_facilitador SERIAL NOT NULL,
-    nome varchar(50) NOT NULL,
-    email varchar(50) NOT NULL, 
+    id_colaborador INT NOT NULL,
+    categoria varchar(50) NOT NULL,
     PRIMARY KEY (id_facilitador)
 );
+
+CREATE TABLE tb_colaborador(
+    id_colaborador SERIAL NOT NULL,
+    nome varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    departamento varchar(50) NOT NULL,
+    PRIMARY KEY (id_colaborador)
+);
+
 CREATE TABLE tb_turma_facilitador(
     id_turma int NOT NULL,
     id_facilitador int NOT NULL,
