@@ -1,0 +1,10 @@
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (1,1, 'soft');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (2,2, 'tech');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (3,5, 'soft');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (4,11, 'tech');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (5,12, 'tech');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (6,13, 'tech');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (7,15, 'soft');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (8,17, 'soft');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (9,19, 'tech');
+insert into tb_facilitador (id_facilitador, id_colaborador, categoria) values (10,20, 'soft');
