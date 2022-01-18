@@ -48,6 +48,13 @@ CREATE TABLE tb_turma_facilitador(
     CONSTRAINT tb_turma_facilitador_fk_id_facilitador FOREIGN KEY (id_facilitador) REFERENCES tb_facilitador (id_facilitador)
 );
 
+CREATE TABLE aluno_delete_audit(
+	id_aluno integer,
+	valor_antigo varchar(500),
+	email varchar(500),
+	data_insert timestamp
+);
+
 -- Inserting Values
 INSERT INTO tb_aluno (id_aluno, id_turma, nome,  cpf, data_nascimento, sexo) VALUES ('1','1','Adérito Girã','406.510.041-01','1993-01-06','M');
 INSERT INTO tb_aluno (id_aluno, id_turma, nome,  cpf, data_nascimento, sexo) VALUES ('2','1','Arachane Mourato','674.221.086-90','1980-12-25','F');
