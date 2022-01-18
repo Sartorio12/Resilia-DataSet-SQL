@@ -49,10 +49,10 @@ CREATE TABLE tb_turma_facilitador(
     CONSTRAINT tb_turma_facilitador_fk_id_facilitador FOREIGN KEY (id_facilitador) REFERENCES tb_facilitador (id_facilitador)
 );
 
-CREATE TABLE aluno_delete_audit(
+CREATE TABLE aluno_update_audit(
 	id_aluno integer,
-	valor_antigo varchar(500),
-	email varchar(500),
+	valor_antigo int,
+	valor_novo int,
 	data_insert timestamp
 );
 
