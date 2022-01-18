@@ -28,3 +28,5 @@ INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal)
 	VALUES('2021-12-10', '2022-06-10', 1, 'galo');
 INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
 	VALUES('2021-12-11', '2022-06-11', 1, 'gato');
+INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
+	VALUES('2022-01-02', '2022-07-02', 2, 'girafa');
