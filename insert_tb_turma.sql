@@ -1,9 +1,9 @@
 -- insert 14 turmas
 
 INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
-	VALUES('2020-01-01', '2020-06-01', 1, 'macaco', -1);
+	VALUES('2020-01-01', '2020-06-01', 1, 'macaco', 0);
 INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
-	VALUES('2020-06-01', '2020-12-01', 1, 'elefante', -1);
+	VALUES('2020-06-01', '2020-12-01', 1, 'elefante', 0);
 INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
 	VALUES('2021-01-01', '2021-06-01', 2, 'cachorro', 1);
 INSERT INTO tb_turma(data_inicio, data_fim, id_curso, animal) 
