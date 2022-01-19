@@ -21,7 +21,7 @@
  
    Sim, vou mostrar pra você, uma forma bem fácil de se visualizar dados é com diagramas ! Saca só o nosso:
    
-   ![img](https://i.imgur.com/uvIBJfC.jpg) 
+   ![img](https://i.imgur.com/zp9ATSJ.jpg) 
    
    Nele você consegue verificar todas as chaves primárias e estrangeiras, e como elas se relacionam dentro do banco de dados.
    
