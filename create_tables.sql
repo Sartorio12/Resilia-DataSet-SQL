@@ -7,7 +7,8 @@ CREATE TABLE tb_aluno (
     data_nascimento DATE NULL, 
     sexo varchar(1) NULL,
     email varchar(50) NULL,
-    ativo integer default 1
+    ativo integer default 1`,
+    PRIMARY KEY (id_aluno)
 );
 
 CREATE TABLE tb_turma(
