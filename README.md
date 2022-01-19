@@ -21,7 +21,7 @@
  
    Sim, vou mostrar pra você, uma forma bem fácil de se visualizar dados é com diagramas ! Saca só o nosso:
    
-   ![img](https://i.imgur.com/Qn5SHxe.png) 
+   ![img](https://i.imgur.com/uvIBJfC.jpg) 
    
    Nele você consegue verificar todas as chaves primárias e estrangeiras, e como elas se relacionam dentro do banco de dados.
    
@@ -40,7 +40,7 @@
    select count(*) from tb_aluno;
    ```
 
-   **Selecionar todos os estudantes com os respectivos cursos que eles estão cadastrados;**
+   **Selecionar todos os estudantes e seus respectivos cursos;**
    ```
    select cu.nome, al.nome, al.id_aluno from tb_aluno al
    INNER JOIN tb_turma tu
@@ -49,7 +49,7 @@
    ON cu.id_curso = tu.id_curso;
    ```
   
-   **Selecionar quais pessoas facilitadoras atuam em mais de uma turma;**
+   **Selecionar quais facilitadores atuam em mais de uma turma;**
    ```
    select count(tf.id_facilitador) qntd, fa.nome  from tb_turma_facilitador tf
    INNER JOIN tb_facilitador fa
@@ -57,4 +57,27 @@
    GROUP BY fa.id_facilitador
    HAVING count(tf.id_facilitador)>1;
    ```
+   **Selecionar quantos alunos foram formados em WebDev;**
+   ```
+   select tt.id_curso, count(id_aluno) from tb_aluno ta
+   inner join tb_turma tt ON ta.id_turma = tt.id_turma
+   where tt.modulo = 0
+   group by tt.id_curso
+   having tt.id_curso = 1
+   ;
+   ```
 
+   **Selecionar quantas turmas começaram no ano de 2021;**
+   ```
+   select count(id_turma) from tb_turma
+   where data_inicio >= '01-01-2021';
+   ```
+  
+   **Selecionar qual a turma com o maior número de facilitadores;**
+   ```
+   select tt.id_turma, count(id_facilitador) from tb_turma tt
+   inner join tb_turma_facilitador ttf ON tt.id_turma = ttf.id_turma
+   group by tt.id_turma
+   order by count(id_facilitador) desc
+   limit 1;
+    ```
