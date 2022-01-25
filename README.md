@@ -10,10 +10,10 @@
 
    Bem, a nossa equipe é composta por:
   
-   - Mateus Sartorio - github.com/Sartorio12
-   - Pedro André - github.com/pedroandre1712
-   - Juliano - github.com/JulianoMata
-   - Fernanda - github.com/FernandaBz
+   - [Mateus Sartorio](github.com/Sartorio12)
+   - [Pedro André](github.com/pedroandre1712)
+   - [Juliano](github.com/JulianoMata)
+   - [Fernanda](github.com/FernandaBz)
   
    Somos todos estudantes da Resilia Educação, cursando Análise de Dados, possivelmente um dia seremos analistas de dados.
  
